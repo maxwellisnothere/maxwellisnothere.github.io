@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0b0a">
+  <meta name="description" content="Pham Buasawan — Computer Engineering student at Sripatum University. Exploring the intersection of IoT, AI, software, and creative production.">
+  <link rel="canonical" href="https://maxwellisnothere.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pham Buasawan — Creative Engineering">
+  <meta property="og:description" content="Code. Circuits. Creativity. Selected projects in software, connected systems, and AI.">
+  <meta property="og:url" content="https://maxwellisnothere.github.io/">
+  <meta property="og:image" content="https://maxwellisnothere.github.io/assets/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>Pham Buasawan — Creative Engineering</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="atmosphere" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Pham Buasawan home"><span class="brand-mark">p<span>.</span></span><span>PHAM<br><small>BUASAWAN</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about" data-i18n="navAbout">About</a><a href="#work" data-i18n="navWork">Selected work</a><a href="#journey" data-i18n="navJourney">Journey</a><a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions"><button class="language" id="language" aria-label="Switch language to Thai"><span class="lang-active">EN</span><span class="lang-slash">/</span><span class="lang-other">TH</span></button><a class="header-cta" href="#contact"><span data-i18n="letsTalk">Let's talk</span><span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about" data-i18n="navAbout">About</a><a href="#work" data-i18n="navWork">Selected work</a><a href="#journey" data-i18n="navJourney">Journey</a><a href="#contact" data-i18n="navContact">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-topline mono"><span><i class="status-dot"></i><span data-i18n="heroEyebrow">COMPUTER ENGINEERING × CREATIVE THINKING</span></span><span class="edition">PORTFOLIO / 2026</span></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="intro-name mono" data-i18n="hello">HELLO, I'M</p>
+          <h1 id="hero-title"><span>PHAM</span><span class="orange">BUASAWAN<span class="name-period">.</span></span></h1>
+          <p class="hero-tagline" data-i18n="heroTagline">A creative mind.<br>An engineer's instinct.</p>
+          <p class="hero-description" data-i18n="heroDescription">I connect code, circuits, and creativity to turn complex ideas into things people can actually use.</p>
+          <div class="hero-actions"><a class="button button-orange" href="#work"><span data-i18n="viewWork">Explore my work</span><span aria-hidden="true">↘</span></a><a class="text-link" href="assets/Pham-Buasawan-CV.png" download="Pham-Buasawan-CV.png"><span data-i18n="downloadCV">Download CV</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg></a></div>
+        </div>
+        <div class="hero-art" aria-label="Portrait of Pham Buasawan with an orange particle orbit">
+          <div class="portrait-sun" aria-hidden="true"></div>
+          <canvas id="orbit" aria-hidden="true"></canvas>
+          <div class="orbit-ring ring-one" aria-hidden="true"></div><div class="orbit-ring ring-two" aria-hidden="true"></div>
+          <span class="art-coordinate coordinate-top mono" aria-hidden="true">13°45′ N<br>100°30′ E</span>
+          <img class="hero-portrait" src="assets/pham-cutout.png" width="1165" height="1349" alt="Pham Buasawan in his Sripatum University uniform" fetchpriority="high">
+          <div class="portrait-fade" aria-hidden="true"></div>
+          <div class="portrait-label"><span class="portrait-label-mark" aria-hidden="true">✳</span><span class="mono">HARDWARE. SOFTWARE.<br><strong data-i18n="humanSide">AND A HUMAN SIDE.</strong></span></div>
+          <span class="art-coordinate coordinate-bottom mono" aria-hidden="true">[ PB / 001 ]</span>
+        </div>
+      </div>
+      <div class="hero-bottom mono"><span><span class="location-mark" aria-hidden="true">⌖</span> <span data-i18n="basedIn">BASED IN BANGKOK, THAILAND</span><span class="clock" id="bangkok-time"></span></span><a href="#about"><span data-i18n="scrollExplore">SCROLL TO EXPLORE</span><span class="scroll-arrow" aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="discipline-strip" aria-hidden="true"><div><span>CODE</span><i>✳</i><span>CIRCUITS</span><i>✳</i><span>CREATIVITY</span><i>✳</i><span>CURIOSITY</span><i>✳</i><span>CODE</span><i>✳</i><span>CIRCUITS</span><i>✳</i><span>CREATIVITY</span><i>✳</i><span>CURIOSITY</span><i>✳</i></div></div>
+
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="section-kicker mono reveal"><span class="orange">01 /</span><span data-i18n="aboutKicker">THE PERSON BEHIND THE CODE</span><span class="section-rule"></span></div>
+      <div class="about-intro"><h2 class="reveal" id="about-heading" data-i18n="aboutHeading">Different worlds.<br><span class="dim">One curious mind.</span></h2><div class="about-copy reveal"><p class="lead" data-i18n="aboutLead">My path to engineering wasn't a straight line. That's my advantage.</p><p data-i18n="aboutBody">From Dramatic Arts to commercial studies, and now Computer Engineering at Sripatum University, I bring a different perspective to technical problems. I enjoy the space where thoughtful design meets working technology.</p><p data-i18n="aboutBodyTwo">One day it's an embedded system or a computer vision model. The next, a web interface, an audio experiment, or a story told through video. The common thread? Making an idea real.</p><a class="text-link" href="https://github.com/maxwellisnothere" target="_blank" rel="noopener noreferrer"><span data-i18n="meetGithub">Meet me on GitHub</span><span aria-hidden="true">↗</span></a></div></div>
+      <div class="capabilities">
+        <article class="capability reveal"><span class="capability-no mono">01</span><svg viewBox="0 0 64 64" class="capability-icon" aria-hidden="true"><rect x="15" y="15" width="34" height="34" rx="3"/><rect x="23" y="23" width="18" height="18"/><path d="M23 5v10m9-10v10m9-10v10M23 49v10m9-10v10m9-10v10M5 23h10M5 32h10M5 41h10m34-18h10M49 32h10M49 41h10"/></svg><h3 data-i18n="capHardware">From bits to boards.</h3><p data-i18n="capHardwareBody">Embedded systems, PCB design, and connected devices that bridge the physical and digital.</p><div class="tags"><span>C/C++</span><span>IoT</span><span>LoRaWAN</span><span>AmebaPro2</span></div></article>
+        <article class="capability reveal"><span class="capability-no mono">02</span><svg viewBox="0 0 64 64" class="capability-icon" aria-hidden="true"><path d="m14 16 18 16 18-16M14 48l18-16 18 16M14 16v32m36-32v32M32 6v52"/><circle cx="14" cy="16" r="5"/><circle cx="50" cy="16" r="5"/><circle cx="32" cy="32" r="7"/><circle cx="14" cy="48" r="5"/><circle cx="50" cy="48" r="5"/></svg><h3 data-i18n="capAI">Teaching machines to see.</h3><p data-i18n="capAIBody">Exploring model training, computer vision, and practical intelligence at the edge.</p><div class="tags"><span>Python</span><span>YOLO</span><span>Face Recognition</span><span>Edge AI</span></div></article>
+        <article class="capability reveal"><span class="capability-no mono">03</span><svg viewBox="0 0 64 64" class="capability-icon" aria-hidden="true"><rect x="6" y="10" width="52" height="42" rx="4"/><path d="M6 21h52m-35 9-7 7 7 7m18-14 7 7-7 7m-11 3 5-20"/><circle cx="14" cy="16" r="1"/><circle cx="20" cy="16" r="1"/></svg><h3 data-i18n="capSoftware">Built for people.</h3><p data-i18n="capSoftwareBody">Responsive interfaces and connected applications, with a creative eye for how they feel.</p><div class="tags"><span>React</span><span>TypeScript</span><span>MQTT</span><span>MySQL</span></div></article>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-heading">
+      <div class="section-kicker mono reveal"><span class="orange">02 /</span><span data-i18n="workKicker">THINKING, MADE TANGIBLE</span><span class="section-rule"></span></div>
+      <div class="section-heading-row reveal"><h2 id="work-heading" data-i18n="workHeading">Selected <span class="orange">work.</span></h2><p data-i18n="workIntro">A few things I've been building.<br>From connected systems to digital experiences.</p></div>
+      <div class="work-toolbar reveal"><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true" data-i18n="filterAll">All work</button><button class="filter" data-filter="iot" aria-pressed="false">IoT &amp; AI</button><button class="filter" data-filter="software" aria-pressed="false" data-i18n="filterSoftware">Apps & web</button></div><span class="mono work-count" id="work-count" aria-live="polite">04 PROJECTS</span></div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card reveal" data-category="iot" data-project="energy">
+          <button class="project-visual energy-visual" data-open-project="energy" aria-label="View SPCSSim project details"><img src="assets/spcssim-original.png" loading="lazy" width="2048" height="1152" alt="Energy dashboard concept artwork from the SPCSSim project"><span class="visual-shade"></span><span class="visual-label mono">ENERGY INTELLIGENCE / CONCEPT VISUAL</span><span class="visual-index mono">01</span><span class="project-open" aria-hidden="true">↗</span></button>
+          <div class="project-meta mono"><span>IoT / AI / SIMULATION</span><span>REACT · TYPESCRIPT</span></div><div class="project-title-row"><h3><button data-open-project="energy">SPCSSim</button></h3><span class="orange" aria-hidden="true">↗</span></div><p data-i18n="energySummary">A smarter look at building energy. Simulating consumption, AI optimization, and the systems behind it.</p>
+        </article>
+        <article class="project-card reveal" data-category="iot" data-project="iot">
+          <button class="project-visual iot-visual" data-open-project="iot" aria-label="View Smart IoT Dashboard project details"><span class="visual-label mono">PHYSICAL → CONNECTED → INTUITIVE</span><img src="assets/iot-system.svg" loading="lazy" width="800" height="520" alt="System diagram connecting ESP32 sensors to an MQTT broker and a mobile dashboard"><span class="visual-index mono">02</span><span class="project-open" aria-hidden="true">↗</span></button>
+          <div class="project-meta mono"><span>CONNECTED SYSTEMS / HARDWARE</span><span>ESP32 · MQTT</span></div><div class="project-title-row"><h3><button data-open-project="iot">Smart IoT Dashboard</button></h3><span class="orange" aria-hidden="true">↗</span></div><p data-i18n="iotSummary">Sensors to screen. Monitoring environmental data and controlling devices through a mobile interface.</p>
+        </article>
+        <article class="project-card reveal" data-category="software" data-project="chat">
+          <button class="project-visual chat-visual" data-open-project="chat" aria-label="View PHAM Messenger project details"><span class="visual-label mono">REAL-TIME CONNECTIONS</span><img src="assets/messenger.svg" loading="lazy" width="800" height="520" alt="Concept illustration of MQTT messaging between connected devices"><span class="visual-index mono">03</span><span class="project-open" aria-hidden="true">↗</span></button>
+          <div class="project-meta mono"><span>MOBILE / REAL-TIME MESSAGING</span><span>EXPO · HIVEMQ</span></div><div class="project-title-row"><h3><button data-open-project="chat">PHAM Messenger</button></h3><span class="orange" aria-hidden="true">↗</span></div><p data-i18n="chatSummary">A cross-platform chat app with public rooms, direct messaging, typing indicators, and online presence.</p>
+        </article>
+        <article class="project-card reveal" data-category="software" data-project="checkout">
+          <button class="project-visual checkout-visual" data-open-project="checkout" aria-label="View AI Self-Checkout UI project details"><span class="visual-label mono">AN INTERFACE FOR THE EVERYDAY</span><img src="assets/checkout.svg" loading="lazy" width="800" height="520" alt="Concept line illustration of a self-checkout interface and product scanning"><span class="visual-index mono">04</span><span class="project-open" aria-hidden="true">↗</span></button>
+          <div class="project-meta mono"><span>INTERFACE / UI PROTOTYPE</span><span>TYPESCRIPT</span></div><div class="project-title-row"><h3><button data-open-project="checkout">AI Self-Checkout UI</button></h3><span class="orange" aria-hidden="true">↗</span></div><p data-i18n="checkoutSummary">An interface prototype exploring the experience of AI-assisted self-checkout.</p>
+        </article>
+      </div>
+      <div class="all-work-link reveal"><span class="mono" data-i18n="moreExperiments">MORE EXPERIMENTS. MORE CURIOSITY.</span><a class="text-link" href="https://github.com/maxwellisnothere?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepositories">Explore all repositories</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="section journey" id="journey" aria-labelledby="journey-heading">
+      <div class="section-kicker mono reveal"><span class="orange">03 /</span><span data-i18n="journeyKicker">A PATH THAT CONNECTS THE DOTS</span><span class="section-rule"></span></div>
+      <div class="journey-layout"><div class="journey-heading reveal"><h2 id="journey-heading" data-i18n="journeyHeading">Always learning.<br><span class="dim">Always building.</span></h2><p data-i18n="journeyIntro">Every chapter adds something to the next. Creativity taught me to see differently. Engineering gives me the tools to build it.</p><div class="journey-motif" aria-hidden="true"><svg viewBox="0 0 260 260"><circle cx="130" cy="130" r="104"/><ellipse cx="130" cy="130" rx="104" ry="35" transform="rotate(-35 130 130)"/><ellipse cx="130" cy="130" rx="104" ry="35" transform="rotate(35 130 130)"/><path d="M26 130h208M130 26v208"/><circle class="motif-core" cx="130" cy="130" r="11"/><circle class="motif-dot" cx="214" cy="69" r="5"/></svg><span class="mono">ART → BUSINESS → ENGINEERING</span></div></div>
+      <div class="journey-content">
+        <div class="timeline-heading mono reveal"><span class="orange">↗</span><span data-i18n="experienceLabel">EXPERIENCE</span></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-year mono">2025 — <span data-i18n="present">PRESENT</span></div><h3 data-i18n="expCreator">Freelance Content Creator</h3><p data-i18n="expCreatorBody">From script to final render. Video production, Premiere Pro, and audio engineering.</p></article>
+          <article class="timeline-item reveal"><div class="timeline-year mono">2025</div><h3>Top Gun Rally</h3><p data-i18n="expTgrBody">Applying embedded systems and automation to engineering problems under time pressure.</p></article>
+          <article class="timeline-item reveal"><div class="timeline-year mono">2019 — 2021</div><h3 data-i18n="expWeb">Web Developer</h3><p data-i18n="expWebBody">WordPress development and theme building in a small startup environment.</p></article>
+          <article class="timeline-item reveal"><div class="timeline-year mono">2020</div><h3 data-i18n="expIntern">Administrative Support Intern</h3><p data-i18n="expInternBody">Supporting the Community Development Department in a government agency.</p></article>
+          <article class="timeline-item reveal"><div class="timeline-year mono">2018 — 2019</div><h3 data-i18n="expMusic">Professional Musician</h3><p data-i18n="expMusicBody">Freelance musician and band member. A foundation in listening, rhythm, and collaboration.</p></article>
+        </div>
+        <div class="timeline-heading education-heading mono reveal"><span class="orange">↗</span><span data-i18n="educationLabel">EDUCATION</span></div>
+        <div class="education-list"><article class="education-item reveal"><div><h3>Sripatum University</h3><p data-i18n="universityCourse">Computer Engineering</p></div><span class="mono">2023 — <span data-i18n="present">PRESENT</span></span></article><article class="education-item reveal"><h3>MBAC</h3><span class="mono">2020 — 2023</span></article><article class="education-item reveal"><h3 data-i18n="dramaticCollege">College of Dramatic Arts</h3><span class="mono">2017 — 2020</span></article></div>
+      </div></div>
+    </section>
+
+    <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-heading">
+      <div class="section-kicker mono reveal"><span class="orange">04 /</span><span data-i18n="toolkitKicker">TOOLS OF THE TRADE</span><span class="section-rule"></span></div>
+      <div class="toolkit-layout"><h2 class="reveal" id="toolkit-heading" data-i18n="toolkitHeading">The right tool.<br><span class="dim">For the right idea.</span></h2><div class="toolkit-list"><div class="toolkit-row reveal"><span class="mono" data-i18n="toolCode">CODE & INTERFACES</span><p>C / C++<span>Python</span>React<span>TypeScript</span>HTML / CSS</p></div><div class="toolkit-row reveal"><span class="mono" data-i18n="toolConnected">DATA & CONNECTED SYSTEMS</span><p>MySQL<span>MongoDB</span>Node-RED<span>LoRaWAN</span>MQTT</p></div><div class="toolkit-row reveal"><span class="mono" data-i18n="toolIntelligence">HARDWARE & INTELLIGENCE</span><p>PCB Design<span>AmebaPro2 / HUB-8735</span>YOLO<span>Face Recognition</span></p></div><div class="toolkit-row reveal"><span class="mono" data-i18n="toolCreative">CREATIVE PRACTICE</span><p>Premiere Pro<span>Audio Engineering</span>UX / UI<span>Storytelling</span></p></div></div></div>
+      <div class="beyond-code reveal"><span class="mono orange" data-i18n="beyondLabel">BEYOND THE CODE</span><p data-i18n="beyondBody">Bass guitar. Audio DSP. Physics & space. Security research.<br>There is always something new to be curious about.</p><div class="language-note mono"><span>THAI / NATIVE</span><span>ENGLISH / WORKING PROFICIENCY</span></div></div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-heading"><div class="contact-aura" aria-hidden="true"></div><div class="section-kicker mono reveal"><span class="orange">05 /</span><span data-i18n="contactKicker">GREAT THINGS START WITH A CONVERSATION</span><span class="section-rule"></span></div><div class="contact-main reveal"><p class="contact-pretitle mono" data-i18n="contactPretitle">HAVE SOMETHING IN MIND?</p><h2 id="contact-heading" data-i18n="contactHeading">Let's make<br>it <em>real.</em><span aria-hidden="true">↗</span></h2><div class="contact-actions"><a class="button button-orange" href="https://www.linkedin.com/in/pham-buasawan-5bbb7b2ba" target="_blank" rel="noopener noreferrer"><span data-i18n="connectLinkedin">Connect on LinkedIn</span><span aria-hidden="true">↗</span></a><button class="button button-outline" id="copy-line"><span data-i18n="copyLine">Copy LINE ID</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg></button></div><p class="line-feedback" id="line-feedback" role="status" aria-live="polite"></p></div><div class="contact-details reveal"><a href="tel:+66617732266"><span class="mono" data-i18n="callLabel">CALL</span><span>+66 61 773 2266 <i aria-hidden="true">↗</i></span></a><a href="https://github.com/maxwellisnothere" target="_blank" rel="noopener noreferrer"><span class="mono">GITHUB</span><span>@maxwellisnothere <i aria-hidden="true">↗</i></span></a><a href="https://www.facebook.com/pham.busawan.5" target="_blank" rel="noopener noreferrer"><span class="mono">FACEBOOK</span><span>Pham Buasawan <i aria-hidden="true">↗</i></span></a><div><span class="mono">LINE</span><span>LASTARDER55</span></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#home">PHAM<span class="orange">.</span></a><span class="mono">© <span id="year">2026</span> PHAM BUASAWAN</span><button class="motion-toggle mono" id="motion-toggle" aria-pressed="false"><span class="motion-light" aria-hidden="true"></span><span data-i18n="motionOn">MOTION ON</span></button><a href="#home" class="back-top mono"><span data-i18n="backTop">BACK TO TOP</span><span aria-hidden="true">↑</span></a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" aria-label="Close project details">×</button><span class="mono orange" id="dialog-category"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3 data-i18n="projectHighlights">Project highlights</h3><ul id="dialog-features"></ul><div class="tags" id="dialog-tags"></div><div class="dialog-actions"><a class="button button-orange" id="dialog-source" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSource">View source on GitHub</span><span aria-hidden="true">↗</span></a></div></div></dialog>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.filter-group,.language,.motion-toggle{display:none}</style><p class="noscript-note">JavaScript is off. Read the portfolio below, or <a href="https://github.com/maxwellisnothere">explore the projects on GitHub</a>.</p></noscript>
+</body>
+</html>
